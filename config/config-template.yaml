@@ -1,0 +1,47 @@
+server:
+  shutdown_waitting_time: 30
+  ip: ""
+  port: 1145
+  develop_mode: true
+
+router:
+  corf:
+    frontend_path: "http://localhost:5173"
+
+service:
+  swagger:
+    enable: true
+  token:
+    access_token_expire_duration: 864000
+
+coze:
+  api: "https://api.coze.cn/open_api/v2/chat"
+  host: "api.coze.cn"
+  token: "xxx"
+  bot_id:
+    gen: "7435489966362476563"
+    judge: "7435494864164290587"
+  user: "sky_lee"
+  timeout: 180
+
+job:
+  question:
+    max_retry_time: 60
+    sleep_time: 43200
+
+logger:
+  path: "./logs/service.log"
+  max_size: 16
+  max_backups: 5
+  compress: false
+  console: true
+  level: 0
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: "xxx"
+  database: "ai-qa-service"
+  charset: "utf8mb4"
+  debug: true

@@ -1,0 +1,9 @@
+.vscode/
+.DS_Store
+/bin
+/logs
+/temp
+docs/
+tmp.*
+design.md
+config_test.yaml
